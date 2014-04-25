@@ -1,15 +1,19 @@
 {
   "name": "generator-bxrextra",
-  "version": "0.0.0",
-  "description": "A generator for Yeoman",
+  "version": "1.0.0",
+  "description": "A generator for basic MODX extra.",
   "keywords": [
-    "yeoman-generator"
+    "MODX",
+    "modx extra",
+    "GPM",
+    "git package management",
+    "modx"
   ],
   "homepage": "https://github.com/TheBoxer/generator-bxrextra",
   "bugs": "https://github.com/TheBoxer/generator-bxrextra/issues",
   "author": {
     "name": "Jan Peca",
-    "email": "",
+    "email": "pecajan@gmail.com",
     "url": "https://github.com/TheBoxer"
   },
   "main": "app/index.js",
