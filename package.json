@@ -1,0 +1,46 @@
+{
+  "name": "generator-bxrextra",
+  "version": "0.0.0",
+  "description": "A generator for Yeoman",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "homepage": "https://github.com/TheBoxer/generator-bxrextra",
+  "bugs": "https://github.com/TheBoxer/generator-bxrextra/issues",
+  "author": {
+    "name": "Jan Peca",
+    "email": "",
+    "url": "https://github.com/TheBoxer"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TheBoxer/generator-bxrextra.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "yeoman-generator": "~0.14.0",
+    "underscore.string":"~2.3.3"
+  },
+  "devDependencies": {
+    "mocha": "~1.14.0"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  },
+  "bundledDependencies": [
+    "yeoman-generator",
+    "underscore.string"
+  ],
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}

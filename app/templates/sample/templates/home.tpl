@@ -1,0 +1,1 @@
+<div id="<%= lowCaseName %>-panel-home-div"></div>

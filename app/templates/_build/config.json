@@ -1,0 +1,84 @@
+{
+    "name": "<%= name %>",
+    "lowCaseName": "<%= lowCaseName %>",
+    "description": "<%= description %>",
+    "author": "<%= authorName %>",
+    "version": "0.1.0",
+    "package":{
+        <%  if (coreComponents.indexOf('Controllers') != -1) { %>
+        <%  if (includeSampleGrid == true) { %>
+        "actions": [{
+            "id": 1
+            ,"controller": "index"
+        }],
+        "menus": [{
+            "text": "<%= lowCaseName %>.menu.<%= lowCaseName %>"
+            ,"description": "<%= lowCaseName %>.menu.<%= lowCaseName %>_desc"
+            ,"action": 1
+        }],
+        <% } else { %>
+        "actions": [{
+            "id": 1
+            ,"controller": "index"
+        }],
+        "menus": [],
+        <% } %>
+        <% } %>
+<% if (coreComponents.indexOf('Elements') != -1) { %>
+        "elements": {
+        <% if (elements.indexOf('Plugins') != -1) { %>
+            <% if (elements.indexOf('Plugins') == (elements.length-1)) { %>
+            "plugins": []
+            <% } else { %>
+            "plugins": [],
+            <% } %>
+        <% } %><% if (elements.indexOf('Snippets') != -1 || includeSampleGrid == true) { %>
+            <% if (includeSampleGrid == true) { %>
+            "snippets": [{
+                "name": "<%= name %>"
+            }],
+            <% } else {%>
+            <% if (elements.indexOf('Snippets') == (elements.length-1)) { %>
+            "snippets": []
+            <% } else { %>
+            "snippets": [],
+            <% } %>
+            <% } %>
+        <% } %><% if (elements.indexOf('Chunks') != -1 || includeSampleGrid == true) { %>
+            <% if (elements.indexOf('Chunks') == (elements.length-1)) { %>
+            "chunks": [
+            <% if (includeSampleGrid == true) { %>
+            {
+                "name": "Item"
+            }
+            <% } %>
+            ]
+            <% } else { %>
+            "chunks": [
+            <% if (includeSampleGrid == true) { %>
+            {
+                "name": "Item"
+            }
+            <% } %>
+            ],
+            <% } %>
+        <% } %><% if (elements.indexOf('Templates') != -1) { %>
+            <% if (elements.indexOf('Templates') == (elements.length-1)) { %>
+            "templates": []
+            <% } else { %>
+            "templates": [],
+            <% } %>
+        <% } %><% if (elements.indexOf('TVs') != -1) { %>
+            "tvs": []
+        <% } %>
+        },
+<% } %>
+        "systemSettings": []
+    },
+    <% if (useDB == true) { %>
+    "database": {
+        "tables": [<% if (includeSampleGrid == true) { %>"<%= name %>Item"<% } %>]
+    },
+    <% } %>
+    "extensionPackage": {}
+}
