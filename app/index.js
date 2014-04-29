@@ -190,6 +190,9 @@ BxrextraGenerator.prototype.app = function app() {
 
     this.mkdir(this.lowCaseName);
     this.mkdir(this.lowCaseName + '/_build');
+    this.mkdir(this.lowCaseName + '/_packages');
+
+    this.copy('gitignore.txt', this.lowCaseName + '/.gitignore');
 
     this.template('_build/config.json', this.lowCaseName + '/_build/config.json');
 
