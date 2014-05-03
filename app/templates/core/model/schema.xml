@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model package="<%= lowCaseName %>" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM" phpdoc-package="<%= lowCaseName %>">
+<model package="<%= lowCaseName %>" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM" phpdoc-package="<%= lowCaseName %>" version="0.1">
 <% if (includeSampleGrid == true) { %>
     <object class="<%= name %>Item" table="<%= lowCaseName %>_items" extends="xPDOSimpleObject">
         <field key="name" dbtype="varchar" precision="100" phptype="string" null="false" default="" />
