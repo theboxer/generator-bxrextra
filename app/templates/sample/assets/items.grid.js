@@ -116,7 +116,6 @@ Ext.extend(<%= name %>.grid.Items,MODx.grid.Grid,{
     }
     
     ,createItem: function(btn,e) {
-        if (!this.menu.record || !this.menu.record.id) return false;
 
         var createItem = MODx.load({
             xtype: '<%= lowCaseName %>-window-item'
