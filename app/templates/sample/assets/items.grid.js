@@ -180,8 +180,6 @@ Ext.reg('<%= lowCaseName %>-grid-items',<%= name %>.grid.Items);
     config = config || {};
     Ext.applyIf(config,{
         title: _('<%= lowCaseName %>.item.create')
-        ,height: 150
-        ,width: 475
         ,closeAction: 'close'
         ,url: <%= name %>.config.connectorUrl
         ,action: 'mgr/item/create'
