@@ -58,12 +58,12 @@ BxrextraGenerator.prototype.askFor = function askFor() {
         type: 'input',
         name: 'authorName',
         message: 'What is your name?',
-        default: 'Jan Peca'
+        default: ''
     },{
         type: 'input',
         name: 'authorEmail',
         message: 'What is your email?',
-        default: 'pecajan@gmail.com'
+        default: ''
     },{
         type: 'confirm',
         name: 'useAssets',
