@@ -104,7 +104,7 @@ Ext.extend(<%= name %>.grid.Items,MODx.grid.Grid,{
     ,getMenu: function() {
         var m = [];
         m.push({
-            text: _('<%= lowCaseName %>.item_update')
+            text: _('<%= lowCaseName %>.item.update')
             ,handler: this.updateItem
         });
         m.push('-');
