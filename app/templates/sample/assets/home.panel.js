@@ -12,7 +12,7 @@
             xtype: 'modx-tabs'
             ,defaults: { border: false ,autoHeight: true }
             ,border: true
-            ,activeItem: 0
+            ,activeTab: 0
             ,hideMode: 'offsets'
             ,items: [{
                 title: _('<%= lowCaseName %>.item.items')
