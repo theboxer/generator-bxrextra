@@ -7,20 +7,12 @@
     "package":{
         <%  if (coreComponents.indexOf('Controllers') != -1) { %>
         <%  if (includeSampleGrid == true) { %>
-        "actions": [{
-            "id": 1
-            ,"controller": "index"
-        }],
         "menus": [{
             "text": "<%= lowCaseName %>.menu.<%= lowCaseName %>"
             ,"description": "<%= lowCaseName %>.menu.<%= lowCaseName %>_desc"
-            ,"action": 1
+            ,"action": "home"
         }],
         <% } else { %>
-        "actions": [{
-            "id": 1
-            ,"controller": "index"
-        }],
         "menus": [],
         <% } %>
         <% } %>

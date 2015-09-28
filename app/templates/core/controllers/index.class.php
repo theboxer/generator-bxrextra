@@ -3,9 +3,6 @@ require_once dirname(__FILE__) . '/model/<%= lowCaseName %>/<%= serviceClassName
 /**
  * @package <%= lowCaseName %>
  */
-class IndexManagerController extends <%= name %>BaseManagerController {
-    public static function getDefaultController() { return 'home'; }
-}
 
 abstract class <%= name %>BaseManagerController extends modExtraManagerController {
     /** @var <%= name %> $<%= lowCaseName %> */
@@ -21,7 +18,8 @@ abstract class <%= name %>BaseManagerController extends modExtraManagerControlle
             <%= name %>.config.connector_url = "'.$this-><%= lowCaseName %>->getOption('connectorUrl').'";
         });
         </script>');
-        return parent::initialize();
+        
+        parent::initialize();
     }
     public function getLanguageTopics() {
         return array('<%= lowCaseName %>:default');

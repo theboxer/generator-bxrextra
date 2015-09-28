@@ -216,7 +216,7 @@ BxrextraGenerator.prototype.app = function app() {
         this.write(this.assetsPath + '/css/index.html', '');
         this.write(this.assetsPath + '/js/index.html', '');
 
-        this.copy('assets/mgr.css', this.assetsPath + '/css/mgr.css')
+        this.copy('assets/mgr.css', this.assetsPath + '/css/mgr.css');
 
         this.template('assets/connector.php', this.assetsPath + '/connector.php');
     }
