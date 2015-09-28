@@ -66,11 +66,10 @@
         },
 <% } %>
         "systemSettings": []
-    },
+    }
     <% if (useDB == true) { %>
-    "database": {
+    ,"database": {
         "tables": [<% if (includeSampleGrid == true) { %>"<%= name %>Item"<% } %>]
-    },
+    }
     <% } %>
-    "extensionPackage": {}
 }
